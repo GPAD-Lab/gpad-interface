@@ -5,7 +5,7 @@ import { useState } from "react";
 import WriteButton from "../WriteButton";
 import { useGlobalContext } from "../Context";
 import { ethers } from "ethers";
-const CreateGPAD = () => {
+const Create = () => {
   const [context, setContext] = useGlobalContext();
   const [data, setData] = useState({});
   const { chain } = useNetwork();
@@ -132,4 +132,4 @@ const CreateGPAD = () => {
   );
 };
 
-export default CreateGPAD;
+export default Create;

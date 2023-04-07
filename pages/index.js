@@ -1,6 +1,6 @@
 import { useAccount, useNetwork, useProvider } from "wagmi";
 import { useGlobalContext } from "../components/Context";
-import CreateGPAD from "../components/createGPAD";
+import Create from "../components/Create";
 import Project from "../components/Project";
 import gpadRouterABI from "../abi/gpadRouterABI.json";
 import { contractAddress } from "../config";
@@ -50,7 +50,7 @@ const Index = () => {
   return (
     <>
       <div className="m-auto w-72 md:w-1/2 my-10">
-        <CreateGPAD />
+        <Create />
 
         <div className="mockup-code bg-primary text-primary-content">
           {data["logs"]?.map((item, index) => {
